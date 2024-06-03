@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/explore_page"
+        android:title="Explore"
+        android:icon="@drawable/explore_navigation"/>
+
+    <item
+        android:id="@+id/category_page"
+        android:title="Patterns"
+        android:icon="@drawable/category_navigation_r2"/>
+
+    <item
+        android:id="@+id/user_page"
+        android:title="User"
+        android:icon="@drawable/user_navigation_r2"/>
+</menu>
