@@ -17,8 +17,6 @@ class RowCounterActivity : AppCompatActivity() {
 
     private var count = 0
 
-    private lateinit var buttonPressed: String
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_row_counter)

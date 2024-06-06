@@ -5,14 +5,51 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatActivity
+import androidx.viewpager2.adapter.FragmentStateAdapter
+import com.example.unravel.databinding.FragmentCategoryBinding
+import com.example.unravel.databinding.FragmentExploreBinding
+import com.google.android.material.tabs.TabLayoutMediator
 
 class CategoryFragment : Fragment() {
+
+    private var categoryBinding: FragmentCategoryBinding? = null
+
+    private val binding get() = categoryBinding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_category, container, false)
+    ): View {
+
+        categoryBinding = FragmentCategoryBinding.inflate(inflater,container,false)
+
+        val adapter = ViewPagerAdapter(this)
+        adapter.addFragment(PatternAmigurumiFragment(), "Amigurumi")
+        adapter.addFragment(PatternClothingFragment(), "Clothing")
+
+        binding.viewPager.adapter = adapter
+
+        TabLayoutMediator(binding.tabLayout, binding.viewPager){tab, position ->
+            tab.text = adapter.getPageTitle(position)
+        }.attach()
+
+        return binding.root
     }
+}
+
+class ViewPagerAdapter(fragmentActivity: CategoryFragment) : FragmentStateAdapter(fragmentActivity) {
+    private val fragments = ArrayList<Fragment>()
+    private val fragmentTitles = ArrayList<String>()
+
+    fun addFragment(fragment: Fragment, title: String){
+        fragments.add(fragment)
+        fragmentTitles.add(title)
+    }
+
+    override fun getItemCount(): Int = fragments.size
+
+    override fun createFragment(position: Int): Fragment = fragments[position]
+
+    fun getPageTitle(position: Int): String = fragmentTitles[position]
 }

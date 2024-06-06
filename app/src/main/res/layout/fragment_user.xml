@@ -8,19 +8,49 @@
     tools:context=".UserFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rowCounter"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:clickable="true">
 
-        <!-- TODO: Update blank fragment layout -->
-        <TextView
-            android:layout_width="306dp"
-            android:layout_height="35dp"
-            android:text="This is the User Fragment"
+        <androidx.cardview.widget.CardView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.47"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.049" />
+            app:layout_constraintVertical_bias="0.12">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="121dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/counterImg"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:clickable="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/row_counter" />
+
+                <TextView
+                    android:id="@+id/counterText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/counter"
+                    android:clickable="true"
+                    android:fontFamily="@font/jura_bold"
+                    android:gravity="center"
+                    android:text="Row Counter"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>
