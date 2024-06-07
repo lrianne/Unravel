@@ -32,11 +32,52 @@
                     android:orientation="horizontal">
 
                     <ImageView
+                        android:id="@+id/imageView10"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/easy_crochet_beanie" />
+
+                    <TextView
+                        android:id="@+id/proj5Title"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/icons"
+                        android:fontFamily="@font/jura_bold"
+                        android:gravity="center"
+                        android:text="Easy Crochet Beanie"
+                        android:textAlignment="center"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.027">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="121dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
                         android:id="@+id/proj1Img"
                         android:layout_width="50dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:src="@drawable/explore_navigation_r1" />
+                        android:src="@drawable/crochet_vneck_vest" />
 
                     <TextView
                         android:id="@+id/proj1Title"
@@ -46,7 +87,7 @@
                         android:background="@color/icons"
                         android:fontFamily="@font/jura_bold"
                         android:gravity="center"
-                        android:text="Crochet Jellyfish"
+                        android:text="Adults Crochet V-Neck Vest"
                         android:textAlignment="center"
                         android:textSize="20sp" />
 
@@ -76,7 +117,7 @@
                         android:layout_width="50dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:src="@drawable/explore_navigation_r1" />
+                        android:src="@drawable/crochet_crew_neck_cardigan" />
 
                     <TextView
                         android:id="@+id/proj2Title"
@@ -86,7 +127,87 @@
                         android:background="@color/icons"
                         android:fontFamily="@font/jura_bold"
                         android:gravity="center"
-                        android:text="TextView"
+                        android:text="Crochet Crew Neck Cardigan"
+                        android:textAlignment="center"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.027">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="121dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView8"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/cowl_neck_crochet_pullover" />
+
+                    <TextView
+                        android:id="@+id/proj3Title"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/icons"
+                        android:fontFamily="@font/jura_bold"
+                        android:gravity="center"
+                        android:text="Over Easy Cowl Neck Crochet Pullover"
+                        android:textAlignment="center"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.027">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="121dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView9"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/baby_jacket_set" />
+
+                    <TextView
+                        android:id="@+id/proj4Title"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/icons"
+                        android:fontFamily="@font/jura_bold"
+                        android:gravity="center"
+                        android:text="Baby Jacket Set"
                         android:textAlignment="center"
                         android:textSize="20sp" />
 

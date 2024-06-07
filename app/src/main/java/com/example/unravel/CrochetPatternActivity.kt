@@ -26,17 +26,25 @@ class CrochetPatternActivity : AppCompatActivity() {
         displayTitle = findViewById(R.id.patternTitle)
         displayImage = findViewById(R.id.patternOutcome)
 
+        /*Actual Pattern URL*/
+        /*Amigurumi Category Links*/
         val amiPatternOne = resources.getString(R.string.crochet_jellyfish)
         val amiPatternTwo = resources.getString(R.string.crochet_blue_whale)
         val amiPatternThree = resources.getString(R.string.long_legged_cat)
+        /*Clothing Category Links*/
+        val clothesPatternOne = resources.getString(R.string.easy_crochet_beanie)
+
         var url = ""
 
+        /*Gets the User's crochet pattern of choice*/
         val patternChosen = sharedPreferences.getString("pattern", "")
+
+        /*Displays the Amigurumi Pattern the User clicked on*/
         if (patternChosen == "amigurumiOne") {
-            displayTitle.text = "Crochet Jellyfish"
-            displayPattern.text = amiPatternOne
-            displayImage.setImageResource(R.drawable.crochet_jellyfish_pin_1text)
-            url = resources.getString(R.string.crochet_jellyfish_link)
+            displayTitle.text = "Crochet Jellyfish" /*Pattern Title is Displayed*/
+            displayPattern.text = amiPatternOne /*Supplies and Instructions*/
+            displayImage.setImageResource(R.drawable.crochet_jellyfish_pin_1text) /*Outcome of the Pattern*/
+            url = resources.getString(R.string.crochet_jellyfish_link) /*Pattern's URL*/
         }
         else if (patternChosen == "amigurumiTwo") {
             displayTitle.text = "Blue Whale Free Crochet Pattern"
@@ -52,14 +60,15 @@ class CrochetPatternActivity : AppCompatActivity() {
         }
 
 
-        /*Clothing Crochet Pattern*/
-        if (patternChosen == "clothingOne") {
-            displayTitle.text = "Crochet Jellyfish"
-            displayPattern.text = amiPatternOne
-            displayImage.setImageResource(R.drawable.crochet_jellyfish_pin_1text)
+        /*Displays the Clothing Crochet Pattern*/
+        if (patternChosen == "clothesFive") {
+            displayTitle.text = "Easy Crochet Beanie"
+            displayPattern.text = clothesPatternOne
+            displayImage.setImageResource(R.drawable.easy_crochet_beanie)
             url = resources.getString(R.string.crochet_jellyfish_link)
         }
 
+        /*The user is redirected to the actual pattern's website page when the outcome image is clicked*/
         displayImage.setOnClickListener{
             intent = Intent();
             intent.setAction(Intent.ACTION_VIEW)

@@ -3,16 +3,15 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
-    <string name="crochet_hooks">
-
-    </string>
-
     <!--Amigurumi Pattern Links-->
     <string name="crochet_jellyfish_link">https://www.1dogwoof.com/crochet-jellyfish/</string>
     <string name="crochet_blue_whale_link">https://www.elisascrochet.com/post/blue-whale-free-crochet-pattern</string>
     <string name="long_legged_cat_link">https://kristitullus.com/blogs/news/cal-long-legged-cat-part-2</string>
 
     <!--Clothing Pattern Links-->
-
-
+    <string name="crochet_vNeck_vest_link">https://cdn.shopify.com/s/files/1/0711/5132/1403/files/CAC0432-008025M.pdf?_gl=1*gtj322*_ga*NTg1MDIyNTIwLjE3MTY0OTQxMDM.*_ga_FNZYKNERBS*MTcxNzc0NjI3NS43LjEuMTcxNzc0NjQ1OS4zOC4wLjIyMzIxNzU0Mg..*_ga_PXD53EW8L5*MTcxNzc0NjI3OC42LjEuMTcxNzc0NjQ2My40Mi4xLjg4MDU3NDU0OA..</string>
+    <string name="crochet_crew_neck_cardigan_link">https://cdn.shopify.com/s/files/1/0711/5132/1403/files/CAC0429-007984M.pdf?_gl=1*m5x3jl*_ga*NTg1MDIyNTIwLjE3MTY0OTQxMDM.*_ga_FNZYKNERBS*MTcxNzc0NjI3NS43LjEuMTcxNzc0NjQ1Ni40MS4wLjIyMzIxNzU0Mg..*_ga_PXD53EW8L5*MTcxNzc0NjI3OC42LjEuMTcxNzc0NjQ1Ni40OS4xLjg4MDU3NDU0OA..</string>
+    <string name="cowl_neck_pullover_link">https://cdn.shopify.com/s/files/1/0711/5132/1403/files/CAC0129-004320M.pdf?_gl=1*1ftlfeq*_ga*NTg1MDIyNTIwLjE3MTY0OTQxMDM.*_ga_FNZYKNERBS*MTcxNzc0NjI3NS43LjEuMTcxNzc0NjQzNy42MC4wLjIyMzIxNzU0Mg..*_ga_PXD53EW8L5*MTcxNzc0NjI3OC42LjEuMTcxNzc0NjQ0OC41Ny4xLjg4MDU3NDU0OA..</string>
+    <string name="crochet_baby_jacket_set_link">https://cdn.shopify.com/s/files/1/0711/5132/1403/files/BRC0229-002240M.pdf?_gl=1*os836e*_ga*NTg1MDIyNTIwLjE3MTY0OTQxMDM.*_ga_FNZYKNERBS*MTcxNzc0NjI3NS43LjEuMTcxNzc0NjQ2OS4yOC4wLjIyMzIxNzU0Mg..*_ga_PXD53EW8L5*MTcxNzc0NjI3OC42LjEuMTcxNzc0NjQ2OS4zNi4xLjg4MDU3NDU0OA..</string>
+    <string name="easy_crochet_beanie_link">https://sarahmaker.com/easy-crochet-beanie/</string>
 </resources>

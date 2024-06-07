@@ -25,6 +25,7 @@ class PatternAmigurumiFragment : Fragment() {
 
         patternAmigurumiBinding = FragmentPatternAmigurumiBinding.inflate(inflater, container, false)
 
+        /*Allows the user to move to the generated pattern activity*/
         val intent = Intent(activity, CrochetPatternActivity::class.java)
 
         binding.proj1Title.setOnClickListener{
@@ -45,8 +46,8 @@ class PatternAmigurumiFragment : Fragment() {
         return binding.root
     }
 
+    /*Saves the user's chosen pattern.*/
     private fun createAmiPatternPage(string: String){
-
         val sharedPreferences = activity?.getSharedPreferences("user_pattern", Context.MODE_PRIVATE)
         val patternChosen = sharedPreferences?.edit()
 
