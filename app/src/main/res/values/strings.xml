@@ -3,5 +3,16 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
+    <string name="crochet_hooks">
+
+    </string>
+
+    <!--Amigurumi Pattern Links-->
     <string name="crochet_jellyfish_link">https://www.1dogwoof.com/crochet-jellyfish/</string>
+    <string name="crochet_blue_whale_link">https://www.elisascrochet.com/post/blue-whale-free-crochet-pattern</string>
+    <string name="long_legged_cat_link">https://kristitullus.com/blogs/news/cal-long-legged-cat-part-2</string>
+
+    <!--Clothing Pattern Links-->
+
+
 </resources>
