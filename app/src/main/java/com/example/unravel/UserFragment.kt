@@ -33,6 +33,16 @@ class UserFragment : Fragment() {
             startActivity(intent)
         }
 
+        binding.hookSizes.setOnClickListener{
+            val intent = Intent(activity, ExtraCrochetHook::class.java)
+            startActivity(intent)
+        }
+
+        binding.abbreviationsText.setOnClickListener{
+            val intent = Intent(activity, ExtraCrochetAbbreviations::class.java)
+            startActivity(intent)
+        }
+
         return binding.root
     }
 }
