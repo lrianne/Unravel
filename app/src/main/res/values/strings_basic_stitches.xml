@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="chain_stitch">
+        Chain Stitch\n\n
+       1. Make a slip knot, and insert your hook.\n\n
+       2. Yarn over and pull up a new loop.\n\n
+       3. The first chain stitch is complete.\n\n
+       4. Repeat to make the next chain stitch and the rest of the foundation chain.
+   </string>
+
+
+    <string name="single_crochet">
+        Single Crochet\n\n
+       1. If you are starting a new crochet swatch, make a slip knot and a beginning chain (foundation row).\n\n
+       2. Insert hook into the next stitch, yarn over, and pull up a loop.\n\n
+       3. Then, yarn over again and pull through both loops on the hook.
+   </string>
+    <string name="single_crochet_link">https://sarahmaker.com/single-crochet/</string>
+
+
+    <string name="double_crochet">
+        Double Crochet\n\n
+       1. Yarn over. Insert hook into the next stitch, yarn over, and pull up a loop.\n\n
+       2. Yarn over and pull through two loops on the hook.\n\n
+       3. Yarn over again and pull through both loops on the hook.
+   </string>
+    <string name="double_crochet_link">https://sarahmaker.com/double-crochet/</string>
+
+
+    <string name="half_double_crochet">
+        Half Double Crochet\n\n
+       1. Yarn over, and insert the hook into the next stitch.\n\n
+       2. Yarn over and pull up a loop.\n\n
+       3. Yarn over again, and pull the yarn through all three loops on the hook.
+   </string>
+    <string name="half_double_crochet_link">https://sarahmaker.com/half-double-crochet/</string>
+
+    <string name="slip_stitch">
+        Slip Stitch\n\n
+       - Insert the hook into the next stitch, yarn over, and pull through the stitch and the active loop on the hook.
+   </string>
+    <string name="slip_stitch_link">https://sarahmaker.com/slip-stitch/</string>
+
+</resources>

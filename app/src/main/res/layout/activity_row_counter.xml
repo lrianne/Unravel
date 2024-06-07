@@ -11,7 +11,7 @@
         android:id="@+id/backButton"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:background="@drawable/stitch_marker_back"
+        android:background="@drawable/back_1"
         android:onClick="backToMain"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

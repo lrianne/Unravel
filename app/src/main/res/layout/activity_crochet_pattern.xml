@@ -10,7 +10,7 @@
         android:id="@+id/backButton"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:background="@drawable/stitch_marker_back"
+        android:background="@drawable/back_1"
         android:onClick="backToMain"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -31,13 +31,7 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="90dp" />
-
-        <ImageView
-            android:id="@+id/patternOutcome"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            app:srcCompat="@drawable/favorite_filled" />
+            android:layout_height="85dp" />
 
         <TextView
             android:id="@+id/patternTitle"
@@ -46,6 +40,12 @@
             android:fontFamily="@font/jura_bold"
             android:textAlignment="center"
             android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/patternOutcome"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            app:srcCompat="@drawable/favorite_filled" />
 
         <Space
             android:layout_width="match_parent"

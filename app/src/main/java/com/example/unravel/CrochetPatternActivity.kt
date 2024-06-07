@@ -27,6 +27,8 @@ class CrochetPatternActivity : AppCompatActivity() {
         displayImage = findViewById(R.id.patternOutcome)
 
         val amiPatternOne = resources.getString(R.string.crochet_jellyfish)
+        val amiPatternTwo = resources.getString(R.string.crochet_blue_whale)
+        val amiPatternThree = resources.getString(R.string.long_legged_cat)
         var url = ""
 
         val patternChosen = sharedPreferences.getString("pattern", "")
@@ -36,7 +38,21 @@ class CrochetPatternActivity : AppCompatActivity() {
             displayImage.setImageResource(R.drawable.crochet_jellyfish_pin_1text)
             url = resources.getString(R.string.crochet_jellyfish_link)
         }
+        else if (patternChosen == "amigurumiTwo") {
+            displayTitle.text = "Blue Whale Free Crochet Pattern"
+            displayPattern.text = amiPatternTwo
+            displayImage.setImageResource(R.drawable.blue_whale_amigurumi)
+            url = resources.getString(R.string.crochet_blue_whale_link)
+        }
+        else if (patternChosen == "amigurumiThree") {
+            displayTitle.text = "Long-Legged Cat"
+            displayPattern.text = amiPatternThree
+            displayImage.setImageResource(R.drawable.long_legged_cat)
+            url = resources.getString(R.string.long_legged_cat_link)
+        }
 
+
+        /*Clothing Crochet Pattern*/
         if (patternChosen == "clothingOne") {
             displayTitle.text = "Crochet Jellyfish"
             displayPattern.text = amiPatternOne

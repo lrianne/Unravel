@@ -7,11 +7,16 @@
     android:layout_height="match_parent"
     tools:context=".UserFragment">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/rowCounter"
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:clickable="true">
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
 
         <androidx.cardview.widget.CardView
             android:layout_width="350dp"
@@ -30,11 +35,10 @@
 
                 <ImageView
                     android:id="@+id/counterImg"
-                    android:layout_width="150dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
                     android:background="@color/white"
-                    android:clickable="true"
-                    android:scaleType="fitCenter"
+                    android:scaleType="centerCrop"
                     android:src="@drawable/row_counter" />
 
                 <TextView
@@ -48,9 +52,9 @@
                     android:text="Row Counter"
                     android:textAlignment="center"
                     android:textColor="#FFFFFF"
-                    android:textSize="30sp" />
+                    android:textSize="30sp"
+                    android:focusable="true" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
+    </LinearLayout>
 </FrameLayout>

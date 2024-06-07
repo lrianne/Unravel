@@ -79,7 +79,7 @@
                         android:src="@drawable/explore_navigation_r1" />
 
                     <TextView
-                        android:id="@+id/textView10"
+                        android:id="@+id/proj2Title"
                         android:layout_width="150dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"

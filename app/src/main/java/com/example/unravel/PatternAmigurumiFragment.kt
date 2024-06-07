@@ -24,20 +24,33 @@ class PatternAmigurumiFragment : Fragment() {
     ): View {
 
         patternAmigurumiBinding = FragmentPatternAmigurumiBinding.inflate(inflater, container, false)
-        val sharedPreferences = activity?.getSharedPreferences("user_pattern", Context.MODE_PRIVATE)
-        val patternChosen = sharedPreferences?.edit()
+
+        val intent = Intent(activity, CrochetPatternActivity::class.java)
 
         binding.proj1Title.setOnClickListener{
-            val intent = Intent(activity, CrochetPatternActivity::class.java)
             startActivity(intent)
-            if (patternChosen != null) {
-                patternChosen.putString("pattern", "amigurumiOne")
-            }
-            if (patternChosen != null) {
-                patternChosen.apply()
-            }
+            createAmiPatternPage("amigurumiOne")
+        }
+
+        binding.proj2Title.setOnClickListener{
+            startActivity(intent)
+            createAmiPatternPage("amigurumiTwo")
+        }
+
+        binding.proj3Title.setOnClickListener{
+            startActivity(intent)
+            createAmiPatternPage("amigurumiThree")
         }
 
         return binding.root
+    }
+
+    private fun createAmiPatternPage(string: String){
+
+        val sharedPreferences = activity?.getSharedPreferences("user_pattern", Context.MODE_PRIVATE)
+        val patternChosen = sharedPreferences?.edit()
+
+        patternChosen?.putString("pattern", string)
+        patternChosen?.apply()
     }
 }
