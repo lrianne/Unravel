@@ -1,7 +1,23 @@
 <resources>
     <string name="app_name">Unravel</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="instructions_text">
+        The Place for all Things Crochet
+        \n\n\n
+        How to use Unravel?
+        \n\n
+        Explore:
+        \n\n- Find short instructions on how to do basic crochet stitches to start your journey of learning crochet.
+        \n\n- Find the list of tools and materials every crocheter needs.
+        \n\n
+        Patterns:
+        \n\n- Go through our crochet category’s and find the project for you! Each crochet pattern shows step-by-step instructions to complete the project and supplies you’ll need.
+        \n\n
+        User:
+        \n\n- Still haven’t found a feature for your needs? Say no more, you’ll find crochet tools here, from crochet hook conversion charts, to a row counter. Which we hope will aid you in your project.
+        \n\n- Pick up where you last left off. Use our Row Counter to keep track of how many rows you’ve finished.
+    </string>
 
     <!--Amigurumi Pattern Links-->
     <string name="crochet_jellyfish_link">https://www.1dogwoof.com/crochet-jellyfish/</string>

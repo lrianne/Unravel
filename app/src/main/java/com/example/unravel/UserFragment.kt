@@ -28,6 +28,11 @@ class UserFragment : Fragment() {
             startActivity(intent)
         }
 
+        binding.aboutUnravel.setOnClickListener{
+            val intent = Intent(activity, Instructions::class.java)
+            startActivity(intent)
+        }
+
         return binding.root
     }
 }

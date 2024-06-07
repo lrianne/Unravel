@@ -5,10 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import com.example.unravel.databinding.FragmentCategoryBinding
-import com.example.unravel.databinding.FragmentExploreBinding
 import com.google.android.material.tabs.TabLayoutMediator
 
 class CategoryFragment : Fragment() {

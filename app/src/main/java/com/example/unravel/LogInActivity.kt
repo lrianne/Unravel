@@ -33,6 +33,8 @@ class LogInActivity : AppCompatActivity() {
         saveButton.setOnClickListener {
             saveName()
             userInput.text.clear()
+            val intent = Intent(this, Instructions::class.java)
+            startActivity(intent)
         }
 
         startButton.setOnClickListener {

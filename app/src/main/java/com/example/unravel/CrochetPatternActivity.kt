@@ -77,4 +77,9 @@ class CrochetPatternActivity : AppCompatActivity() {
             startActivity(intent)
         }
     }
+
+    fun backToMain(view: View) {
+        val intent = Intent(this, MainActivity::class.java)
+        startActivity(intent)
+    }
 }
