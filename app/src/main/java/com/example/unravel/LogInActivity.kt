@@ -30,6 +30,13 @@ class LogInActivity : AppCompatActivity() {
 
         sharedPreferences = getSharedPreferences("user_prefers", Context.MODE_PRIVATE)
 
+        //Clears the name entry field
+        clearButton.setOnClickListener{
+            userInput.text.clear()
+        }
+
+        //Stores the user's name through Shared Preferences
+        //User is then redirected to the Instructions Activity
         saveButton.setOnClickListener {
             saveName()
             userInput.text.clear()
@@ -37,6 +44,7 @@ class LogInActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        //User is redirected to the Main Activity
         startButton.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)

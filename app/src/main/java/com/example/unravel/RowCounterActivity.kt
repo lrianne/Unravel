@@ -31,26 +31,28 @@ class RowCounterActivity : AppCompatActivity() {
         }
     }
 
+    //Returns the user to the Main Activity
     fun backToMain(view: View) {
         val intent = Intent(this, MainActivity::class.java)
         startActivity(intent)
     }
 
+    //Increases the row count
     fun countIncrease (view: View){
         count ++
         displayCount.text = count.toString()
     }
-
+    //Decreases the row count
     fun countDecrease (view: View){
         count --
         displayCount.text = count.toString()
     }
-
+    //Resets the row count
     fun countReset (view: View){
         count = 0
         displayCount.text = count.toString()
     }
-
+    //Stores the current row count in a Shared Preference called "user_count"
     fun saveCount(view: View){
         val sharedPreferences = getSharedPreferences("user_count", Context.MODE_PRIVATE)
         val changeCount = sharedPreferences.edit()
@@ -60,7 +62,7 @@ class RowCounterActivity : AppCompatActivity() {
 
         savedCountBtn.visibility = View.VISIBLE
     }
-
+    //Displays the value of "user_count".
     fun showSavedCount(view: View){
         val sharedPreferences = getSharedPreferences("user_count", Context.MODE_PRIVATE)
         val savedCount = sharedPreferences.getString("count", "")

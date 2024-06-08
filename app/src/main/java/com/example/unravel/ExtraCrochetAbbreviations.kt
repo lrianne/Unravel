@@ -10,7 +10,7 @@ class ExtraCrochetAbbreviations : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_extra_crochet_abbreviations)
     }
-
+    //Returns user to the Main Activity
     fun abbreviationsBackBtn(view: View){
         val intent = Intent(this, MainActivity::class.java)
         startActivity(intent)

@@ -15,7 +15,6 @@ class ExploreFragment : Fragment() {
 
     private var exploreBinding: FragmentExploreBinding? = null
     private val binding get() = exploreBinding!!
-    private lateinit var sharedPreferences: SharedPreferences
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -24,6 +23,7 @@ class ExploreFragment : Fragment() {
 
         exploreBinding = FragmentExploreBinding.inflate(inflater,container, false)
 
+        //Displays the user's name on the Main Activity, by accessing the value of a Shared Preference called "user_prefers".
         val sharedPreferences = requireActivity().applicationContext.getSharedPreferences("user_prefers", Context.MODE_PRIVATE)
         val givenName = sharedPreferences.getString("name", "")
         binding.userName.text = givenName

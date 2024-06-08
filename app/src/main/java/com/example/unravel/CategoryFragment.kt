@@ -36,6 +36,7 @@ class CategoryFragment : Fragment() {
     }
 }
 
+// Displays the Amigurumi and Clothing fragments in the View Pager.
 class ViewPagerAdapter(fragmentActivity: CategoryFragment) : FragmentStateAdapter(fragmentActivity) {
     private val fragments = ArrayList<Fragment>()
     private val fragmentTitles = ArrayList<String>()

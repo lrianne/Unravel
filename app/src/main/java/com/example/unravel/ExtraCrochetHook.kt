@@ -11,7 +11,7 @@ class ExtraCrochetHook : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_extra_crochet_hook)
     }
-
+    //Returns the user to the Main Activity
     fun hookBackBtn(view: View){
         val intent = Intent(this, MainActivity::class.java)
         startActivity(intent)

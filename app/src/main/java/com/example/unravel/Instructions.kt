@@ -10,7 +10,7 @@ class Instructions : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_instructions)
     }
-
+    //Returns user to the Main Activity
     fun backToMain(view: View) {
         val intent = Intent(this, MainActivity::class.java)
         startActivity(intent)

@@ -47,6 +47,8 @@ class MainActivity : AppCompatActivity() {
     }
     switchFragment(ExploreFragment())
     }
+
+    //Switches between the three main fragments, and displays them on the Frame Layout of the Main Activity.
     private fun switchFragment(fragment: Fragment){
         supportFragmentManager.beginTransaction().replace(R.id.frameLayout, fragment).commit()
     }

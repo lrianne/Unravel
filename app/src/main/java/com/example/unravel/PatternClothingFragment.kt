@@ -52,7 +52,7 @@ class PatternClothingFragment : Fragment() {
         return binding.root
     }
 
-    /*Saves the user's chosen pattern.*/
+    /*Stores the user's chosen pattern.*/
     private fun createClothesPatternPage(string: String){
         val sharedPreferences = activity?.getSharedPreferences("user_pattern", Context.MODE_PRIVATE)
         val patternChosen = sharedPreferences?.edit()
